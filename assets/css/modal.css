@@ -9,14 +9,26 @@
  * Modal styles
 /* ---------------------------------------------- */
 
-.modal-header {
+.modal-header, .modal-body, .modal-footer  {
+    text-align: center;
+    color: #000;
+}
+.modal-header, .modal-footer {
     background: #007FFF;
 }
 
 .modal-header h2 {
-    color: #FFFFFF;
+    color: #F5F5F5;
 }
 
-#join, .form-group {
-    color: #353535;
+#join {
+    color: #F5F5F5;
+    background: #007FFF;
+    padding: 15px 25px;
+    border: 2px solid #F5F5F5;
+}
+
+#join:hover {
+    color: #007FFF;
+    background: #F5F5F5;
 }

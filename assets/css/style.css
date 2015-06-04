@@ -15,7 +15,7 @@
 body {
 	background: #FFF;
 	font: 300 16px/1.8 'Lato', sans-serif;
-	color: #FFF;
+    color: #F5F5F5;
 	text-align: center;
 }
 
@@ -24,19 +24,63 @@ img {
 	height: auto;
 }
 
-a {
+a, .bioName {
 	color: #007FFF;
-}
-
-a:hover {
-	color: #1C92C9;
 }
 
 /* Custom updates
 ------------------------------------------------- */
-.special {
-	color: #007FFF;
+.bio {
+    text-align: left;
+    padding: 15px;
+    border: 4px dashed #FFF;
+    border-radius: 10px;
+    margin: 15px 0px 30px 0px;
 }
+
+.cto {
+    text-align: right;
+}
+.special, .launch {
+	color: #ffd700;
+}
+
+#featLink {
+    color: #F5F5F5;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+#featLink:hover {
+    color: #007FFF;
+}
+
+.launch {
+    border: 1px solid #F5F5F5;
+    border-radius: 20px;
+    margin-top: 30px;
+    font-size: 24px;
+    padding: 10px 0px;
+}
+
+.bioInfo {
+    font-size: 16px;
+}
+
+#squadButton {
+    color: #F5F5F5;
+    background: #007FFF;
+    padding: 15px 25px;
+    border: 2px solid #F5F5F5;
+}
+
+#squadButton:hover {
+    color: #007FFF;
+    background: #F5F5F5;
+}
+
+
 
 /* Transition elements
 ------------------------------------------------- */
@@ -68,17 +112,17 @@ a,
 .btn,
 .form-control,
 .features-item-icon {
-	-webkit-border-radius: 6px;
-	   -moz-border-radius: 6px;
-		 -o-border-radius: 6px;
-			border-radius: 6px;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+		 -o-border-radius: 10px;
+			border-radius: 10px;
 }
 
 /* Inputs styles
 ------------------------------------------------- */
 
 .form-control {
-	background: #FFF;
+	background: #F5F5F5;
 	border: 0 !important;
 }
 
@@ -86,7 +130,7 @@ a,
 ------------------------------------------------- */
 
 .btn {
-	color: #FFF;
+	color: #F5F5F5;
 	padding: 15px 25px;
 	margin: 5px;
 }
@@ -107,27 +151,29 @@ a,
 	background: #007FFF;
 	border: 2px solid #007FFF;
 	outline: inherit !important;
-	color: #FFF;
+	color: #F5F5F5;
 }
 
 /* Typography
 ------------------------------------------------- */
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	line-height: 1.2;
-	color: inherit;
+	color: #F5F5F5;
 	margin: 0 0 15px;
 }
 
 h1 { font-size: 46px; margin: 0 0 25px; }
 
-h2 { font-size: 42px; color: #353535; }
+h2 { font-size: 42px; color: #000; }
 
-h3 { font-size: 20px; color: #353535; }
+h3 { font-size: 20px; color: #000; }
 
 h4 { font-size: 18px; }
+
+h5 { font-size: 16px;}
 
 .btn,
 .form-control {
@@ -152,8 +198,7 @@ h4 { font-size: 18px; }
 	font-size: 18px;
 }
 
-.header-deveider {
-
+.header-divider {
 	background: #d9d9d9;
 	width: 60px;
 	height: 3px;
@@ -173,11 +218,11 @@ h4 { font-size: 18px; }
 ------------------------------------------------- */
 
 .intro, .footer {
-	background-color: rgba(0, 0, 0, .5) !important;
+	background-color: rgba(0, 0, 0, 1) !important;
 	background-image: url("../images/bg.png") !important;
 	padding: 50px 0;
 	z-index: auto !important;
-	color: #FFF;
+	color: #F5F5F5;
 	position: relative;
 }
 
@@ -187,12 +232,12 @@ h4 { font-size: 18px; }
 }
 
 .i_header, .i_cicle, .i_footer {
-	margin: 25px 0;
+	margin: 0 0 25px 0;
 }
 
 .i_header {
 	font-size: 20px;
-	margin: 0 0 25px;
+	margin: 0 0;
 }
 
 .i_cicle {
@@ -211,7 +256,7 @@ h4 { font-size: 18px; }
 	background: #F5F5F5;
 	padding: 90px 0;
 	font-size: 26px;
-	color: #353535;
+	color: #000;
 }
 
 /* Features
@@ -227,11 +272,10 @@ h4 { font-size: 18px; }
 }
 
 .features-item-icon {
-	border: 2px solid #FFF;
+	border: 2px solid #F5F5F5;
 	width: 62px;
 	height: 62px;
 	margin: 0 auto 30px;
-	color: #FFF;
 	font-size: 28px;
 	line-height: 58px;
 }
@@ -256,7 +300,7 @@ h4 { font-size: 18px; }
 ------------------------------------------------- */
 
 .footer, .footer h2, .footer h3 {
-	color: #FFF;
+	color: #F5F5F5;
 }
 
 .subscription-form .input-box {
@@ -322,7 +366,7 @@ h4 { font-size: 18px; }
 /* ---------------------------------------------- */
 
 #preloader {
-	background: #FFF;
+	background: #F5F5F5;
 	bottom: 0;
 	left: 0;
 	position: fixed;
@@ -350,7 +394,7 @@ h4 { font-size: 18px; }
 @media (max-width: 767px) {
 
 	.features {
-		padding: 90 0 60px;
+		padding: 90px 0 60px;
 	}
 
 	.features-item {
