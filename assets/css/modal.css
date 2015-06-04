@@ -1,0 +1,22 @@
+/**
+ * Name: uRyde
+ * Version: 1.0
+ * Author: PSD II
+ *
+ *
+ *
+/* ---------------------------------------------- /*
+ * Modal styles
+/* ---------------------------------------------- */
+
+.modal-header {
+    background: #007FFF;
+}
+
+.modal-header h2 {
+    color: #FFFFFF;
+}
+
+#join, .form-group {
+    color: #353535;
+}
