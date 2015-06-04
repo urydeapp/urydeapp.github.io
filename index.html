@@ -162,14 +162,16 @@
 				</div>
 
 				<div class="col-md-12">
-					<form class="subscription-form form-inline wow fadeInUp" role="form">
+					<form class="subscription-form wow fadeInUp" role="form">
 						<div class="form-group">
-							<label class="sr-only" for="sub-email">Your Email</label>
-							<input type="email" id="sub-email" name="sub-email" class="form-control input-box" placeholder="Your Email" >
+							<!-- <label class="sr-only" for=" ">Your Email</label> -->
+							<input type="text" id="username" class="form-control input-box" placeholder="Username" >
+							<input type="password" id="password" class="form-control input-box" placeholder="Password" >
+							<input type="email" id="userEmail" class="form-control input-box" placeholder="Email" >
 						</div>
-						<button type="submit" class="btn btn-default btn-theme"><i class="fa fa-rss"></i> Join uRyde</button>
+							<input type="button" id="subscribe" type="submit" class="btn btn-default btn-theme" onclick="getUser()" value="Join uRyde!">
+							<!--<i class="fa fa-rss"></i>-->
 					</form>
-					<div class="subscription-message"></div>
 				</div>
 
 				<div id="share" class="col-md-12 wow fadeInUp">
