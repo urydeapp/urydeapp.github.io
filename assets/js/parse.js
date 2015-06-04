@@ -7,10 +7,23 @@ Parse.initialize("XtZNXXbzP5R99gWlwRM6ZiRjXxrRoKRd8UEy5QoU", "u2GXAp1rs6x7MYKUtL
 
 //otherwise
 var user = new Parse.User();
-function getUser(e) {
-	user.set("username", document.getElementById('username').value);
-	user.set("password", document.getElementById('password').value);
-	user.set("email", document.getElementById('userEmail').value);
+function getUser() {
+    var username = document.getElementById('username');
+    var password = document.getElementById('password');
+    var email = document.getElementById('userEmail');
+
+    //QA stuff
+    /*
+        if (username.validity.tooLong || username.value.length < 6) {
+            username.setCustomValidity("Username must be between 6 and 20 characters");
+        }
+        else {
+        }
+    */
+    user.set("username", username.value);
+    user.set("password", password.value);
+    user.set("email", email.value);
+
 	user.signUp(null, {
 		success: function(user) {
 	    	// Hooray! Let them use the app now.
@@ -22,7 +35,7 @@ function getUser(e) {
 	 	}
 	});
 
-	e.preventDefault();
+	//e.preventDefault();
 }
 /*
 user.set("firstName", "PSD");

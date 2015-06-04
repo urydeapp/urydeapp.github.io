@@ -42,7 +42,7 @@
 
 					<div class="i_header">
 						<div class="logo">
-							<img src="assets/images/logo.png" alt="">
+							<img src="assets/images/logo.gif" alt="">
 						</div>
 						<h1>uRyde</h1>
 						<p>Get a ride from a fellow student, then become friends!</p>
@@ -55,7 +55,34 @@
 					</div>
 
 					<div class="i_footer">
-						<a href="#subscribe" class="btn btn-default btn-lg btn-theme">JOIN!</a>
+						<button class="btn btn-default btn-lg btn-theme" data-toggle="modal" data-target="#myModal">JOIN!</button>
+						<a href="#features">Features</a>
+					</div>
+
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h2 class="modal-title" id="myModalLabel">Create Account</h2>
+								</div>
+								<div class="modal-body">
+                                    <form class="subscription-form wow fadeInUp" role="form">
+                                        <div class="form-group">
+                                            <!-- <label class="sr-only" for=" ">Your Email</label> -->
+                                            <input type="text" id="username" class="form-control input-box" minlength=6 maxlength=20 placeholder="Username (6-20 characters)" >
+                                            <input type="password" id="password" class="form-control input-box" placeholder="Password (6-20 characters)" >
+                                            <input type="email" id="userEmail" class="form-control input-box" placeholder="Email (must be .edu)" >
+                                        </div>
+                                        <!--<i class="fa fa-rss"></i>-->
+                                    </form>
+								</div>
+								<div class="modal-footer">
+                                    <input type="button" id="join" type="submit" class="btn btn-default btn-theme" onclick="getUser()" value="Join uRyde!">
+                                </div>
+							</div>
+						</div>
 					</div>
 
 				</div>
@@ -69,7 +96,7 @@
 
 	<!-- Features section start -->
 
-	<section class="features">
+	<section id="features" class="features">
 		<div class="container">
 
 			<div class="row">
@@ -159,19 +186,6 @@
 					<h2>Join the Pryde</h2>
 					<div class="header-deveider"></div>
 					<p class="wow fadeInUp">I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence.</p>
-				</div>
-
-				<div class="col-md-12">
-					<form class="subscription-form wow fadeInUp" role="form">
-						<div class="form-group">
-							<!-- <label class="sr-only" for=" ">Your Email</label> -->
-							<input type="text" id="username" class="form-control input-box" placeholder="Username" >
-							<input type="password" id="password" class="form-control input-box" placeholder="Password" >
-							<input type="email" id="userEmail" class="form-control input-box" placeholder="Email" >
-						</div>
-							<input type="button" id="subscribe" type="submit" class="btn btn-default btn-theme" onclick="getUser()" value="Join uRyde!">
-							<!--<i class="fa fa-rss"></i>-->
-					</form>
 				</div>
 
 				<div id="share" class="col-md-12 wow fadeInUp">
