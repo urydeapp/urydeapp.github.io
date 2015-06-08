@@ -8,9 +8,14 @@ Parse.initialize("XtZNXXbzP5R99gWlwRM6ZiRjXxrRoKRd8UEy5QoU", "u2GXAp1rs6x7MYKUtL
 //otherwise
 var user = new Parse.User();
 function getUser() {
+    var firstName = document.getElementById('firstName');
+    var lastName = document.getElementById('lastName');
     var username = document.getElementById('username');
     var password = document.getElementById('password');
+    var confPass = document.getElementById('confirmPassword');
     var email = document.getElementById('userEmail');
+    var school = document.getElementById('school');
+    var phoneNum = document.getElementById('phoneNum');
 
     //QA stuff
     /*
@@ -20,9 +25,17 @@ function getUser() {
         else {
         }
     */
-    user.set("username", username.value);
-    user.set("password", password.value);
-    user.set("email", email.value);
+
+    if (password.value === confPass.value) {
+        user.set("firstName", firstName.value);
+        user.set("lastName", lastName.value);
+        user.set("username", username.value);
+        user.set("password", password.value);
+        user.set("email", email.value);
+        user.set("school", school.value);
+        user.set("phoneNum", phoneNum.value);
+    }
+    
 
 	user.signUp(null, {
 		success: function(user) {
@@ -35,9 +48,5 @@ function getUser() {
 	 	}
 	});
 
-	//e.preventDefault();
 }
-/*
-user.set("firstName", "PSD");
-user.set("lastName", "isDope");
-*/
+
