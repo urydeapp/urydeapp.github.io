@@ -17,6 +17,8 @@ function getUser() {
     var school = document.getElementById('school');
     var phoneNum = document.getElementById('phoneNum');
 
+    var signupButton = document.getElementById('join');
+
     //QA stuff
     /*
         if (username.validity.tooLong || username.value.length < 6) {
@@ -40,9 +42,13 @@ function getUser() {
 	user.signUp(null, {
 		success: function(user) {
 	    	// Hooray! Let them use the app now.
-			alert("Thank you for ");
+			alert(firstName.value + ", thank you for joining uRyde!");
             $('#myModal').modal('hide'); //hides modal - not necessary if refreshing correctly
             window.location.reload(); //refreshes page
+            /*
+            signupButton.value = "Welcome!";
+            signupButton.style.color = "#FFD700";
+            */
 		},
 		error: function(user, error) {
 	    	// Show the error message somewhere and let the user try again.
