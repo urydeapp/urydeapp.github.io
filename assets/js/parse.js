@@ -40,7 +40,9 @@ function getUser() {
 	user.signUp(null, {
 		success: function(user) {
 	    	// Hooray! Let them use the app now.
-			alert("Yay it worked");
+			alert("Thank you for ");
+            $('#myModal').modal('hide'); //hides modal - not necessary if refreshing correctly
+            window.location.reload(); //refreshes page
 		},
 		error: function(user, error) {
 	    	// Show the error message somewhere and let the user try again.
