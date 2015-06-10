@@ -25,22 +25,35 @@ img {
 }
 
 a, .bioName {
+	font-weight: 900;
 	color: #007FFF;
+}
+
+ul {
+	padding: 0;
+	list-style-type: none;
 }
 
 /* Custom updates
 ------------------------------------------------- */
 .bio {
     text-align: left;
-    padding: 15px;
+    padding: 30px;
     border: 4px dashed #FFF;
     border-radius: 10px;
     margin: 15px 0px 30px 0px;
 }
 
+.view_site {
+	font-style: inherit;
+	font-size: 16px;
+	text-align: center;
+}
+
 .cto {
     text-align: right;
 }
+
 .special, .launch {
 	color: #ffd700;
 }
@@ -218,13 +231,19 @@ h5 { font-size: 16px;}
 ------------------------------------------------- */
 
 .intro, .footer {
-	background-color: rgba(0, 0, 0, 1) !important;
+	background-color: rgba(0, 0, 0, .7) !important;
 	background-image: url("../images/bg.png") !important;
 	padding: 50px 0;
 	z-index: auto !important;
 	color: #F5F5F5;
 	position: relative;
 }
+/*
+.footer {
+	background-color: #007FFF;
+	padding: 25px 0 25px 0;
+}
+*/
 
 .intro > .container {
 	position: relative;
@@ -254,7 +273,7 @@ h5 { font-size: 16px;}
 
 .about {
 	background: #F5F5F5;
-	padding: 90px 0;
+	padding: 75px 0 45px 0;
 	font-size: 26px;
 	color: #000;
 }

@@ -7,15 +7,36 @@ Parse.initialize("XtZNXXbzP5R99gWlwRM6ZiRjXxrRoKRd8UEy5QoU", "u2GXAp1rs6x7MYKUtL
 
 //otherwise
 var user = new Parse.User();
-function getUser() {
-    var firstName = document.getElementById('firstName');
-    var lastName = document.getElementById('lastName');
-    var username = document.getElementById('username');
-    var password = document.getElementById('password');
-    var confPass = document.getElementById('confirmPassword');
-    var email = document.getElementById('userEmail');
-    var school = document.getElementById('school');
-    var phoneNum = document.getElementById('phoneNum');
+var firstName = document.getElementById('firstName');
+var lastName = document.getElementById('lastName');
+var username = document.getElementById('username');
+var password = document.getElementById('password');
+var confPass = document.getElementById('confirmPassword');
+var email = document.getElementById('userEmail');
+var school = document.getElementById('school');
+var phoneNum = document.getElementById('phoneNum');
+
+
+
+function checkUserInfo() {
+    if(username.value.length < 6){
+        username.style.color = "#FF0000";
+        return false;
+    } else {
+        username.style.color = "#00FF00";
+    }
+
+    if (password.value.length < 6 || confPass.value.length < 6 || password.value !== confPass.value) {
+        password.style.color = "#FF0000";
+        confPass.style.color = "#FF0000";
+        return false;
+    } else {
+        password.style.color = "#00FF00";
+        confPass.style.color = "#00FF00";
+    }
+}
+
+function setUser() {
 
     var signupButton = document.getElementById('join');
 
@@ -28,7 +49,8 @@ function getUser() {
         }
     */
 
-    if (password.value === confPass.value) {
+
+    if (checkUserInfo) {
         user.set("firstName", firstName.value);
         user.set("lastName", lastName.value);
         user.set("username", username.value);

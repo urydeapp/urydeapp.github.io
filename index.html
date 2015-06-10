@@ -72,24 +72,24 @@
 									<h2 class="modal-title" id="myModalLabel">Create Account</h2>
 								</div>
 								<div class="modal-body">
-                                    <form class="subscription-form wow fadeInUp" role="form">
+                                    <form class="subscription-form wow fadeInUp" onchange="return checkUserInfo();" role="form">
                                         <div class="form-group">
                                             <!-- <label class="sr-only" for=" ">Your Email</label> -->
-                                            <input type="text" id="firstName" class="input-box" maxlength=50 placeholder="First Name" >
-                                            <input type="text" id="lastName" class="input-box" maxlength=50 placeholder="Last Name" >
-                                            <input type="text" id="username" class="input-box" minlength=6 maxlength=20 placeholder="Username (6-20 characters)" >
-                                            <input type="password" id="password" class="input-box" minlength=6 maxlength=20 placeholder="Password (6-20 characters)" >
-                                            <input type="password" id="confirmPassword" class="input-box" minlength=6 maxlength=20 placeholder="Confirm Password" >
-                                            <input type="email" id="userEmail" class="input-box" placeholder="Email (must be .edu)" >
-                                            <input type="text" id="school" class="input-box" placeholder="School" >
-                                            <input type="number" id="phoneNum" class="input-box" minlength=10 maxlength=11 placeholder="Phone Number" >
+                                            <input type="text" required id="firstName" class="input-box" maxlength=50 placeholder="First Name" >
+                                            <input type="text" required id="lastName" class="input-box" maxlength=50 placeholder="Last Name" >
+                                            <input type="text" required id="username" class="input-box" minlength=6 maxlength=20 placeholder="Username (6-20 characters)" >
+                                            <input type="password" required id="password" class="input-box" minlength=6 maxlength=20 placeholder="Password (6-20 characters)" >
+                                            <input type="password" required id="confirmPassword" class="input-box" minlength=6 maxlength=20 placeholder="Confirm Password" >
+                                            <input type="email" required id="userEmail" class="input-box" placeholder="Email (must be .edu)" >
+                                            <input type="text" required id="school" class="input-box" placeholder="School" >
+                                            <input type="number" required id="phoneNum" class="input-box" minlength=10 maxlength=11 placeholder="Phone Number" >
                                             
                                         </div>
                                         <!--<i class="fa fa-rss"></i>-->
                                     </form>
 								</div>
 								<div class="modal-footer">
-                                    <input type="button" id="join" type="submit" class="btn btn-default btn-lg btn-theme" onclick="getUser()" value="Join uRyde!">
+                                    <input type="button" id="join" type="submit" class="btn btn-default btn-lg btn-theme" onclick="setUser()" value="Join uRyde!">
                                 </div>
 							</div>
 						</div>
@@ -114,7 +114,7 @@
 				<div class="col-md-12 subtitle">
 					<h2>Features</h2>
 					<!--<div class="header-deveider"></div>-->
-					<p class="wow fadeInUp">Find a better way home with other college students, uRyde helps connect college students looking for a way back home. Whether you are offering students to join or requesting a ride from another student, uRyde makes it easy to find your way home</p>
+					<p class="wow fadeInUp">uRyde helps connect college students who lack transportation. Whether you are offering students to join or requesting a ride from another student, uRyde makes it easy to find your way home.</p>
 				</div>
 
 				<div class="col-md-4 col-sm-4 wow fadeInLeft">
@@ -123,7 +123,7 @@
 							<i class="fa fa-bomb"></i>
 						</div>
 						<h3>Offers</h3>
-						<p>Offer rides to other students that are heading back to the same city you are traveling to. Creating an offer allows other students to get in contact with you about riding together, and a great opportunity to connect with other students at the university. </p>
+						<p>Making offers provides students the ability to give others a friendly ride home, and a great opportunity to network with them while attending university.</p>
 					</div>
 				</div>
 
@@ -133,7 +133,7 @@
 							<i class="fa fa-map-marker"></i>
 						</div>
 						<h3>Requests</h3>
-						<p>Request a ride from another student heading in the same direction. Posting a request allows students with cars to let you know when they are going home, and are willing to give you a ride.</p>
+						<p>Request a ride from another student heading in the same direction. Posting a request allows students to let you know when they are going home, and are willing to give you a ride.</p>
 					</div>
 				</div>
 
@@ -143,7 +143,7 @@
 							<i class="fa fa-cog"></i>
 						</div>
 						<h3>Notifications</h3>
-						<p>Recieve instant Push notifications when other students want to request/offer a ride to you. When you accept the request/offer, you are connected to the other student to discuss the ride details. s</p>
+						<p>Recieve notifications from other students who make offers or request rides from you. Upon acceptance, you are instantly connected with them in order to negotiate.</p>
 					</div>
 				</div>
 
@@ -157,31 +157,35 @@
 
 	<!-- About section start -->
 
-	<section id="about" class="about">
+	<footer id="about" class="about">
 		<div class="container">
 			<div class="row">
                 <h2>The Squad</h2>
 				<div class="bio col-lg-12">
                     <div class="ceo col-lg-12">
                         <div class="col-lg-2 col-sm-2">
-                            <img src="assets/squad/PSD_CEO.png" alt="">
+                            <a href="http://psdewar.me" target="_blank"><img src="assets/squad/PSD_CEO.png" alt=""></a>
+                            <p class="view_site">View Website</p>
                         </div>
                         <div class="col-lg-4 col-sm-4">
-                            <p class="bioName wow fadeInUp">Peyt Spencer Dewar II
+                            <p class="bioName wow fadeInUp">Peyt S. Dewar II
                             <h3><em>Chief Executive Officer</em></h3>
                             </p>
-                            <p class="bioInfo">"Not Sponsored by Double Dutch. Not the dopest. Not the rawest. He is PSD the Second, a two sport athlete, UF graduate with a Guyanese background now looking for a job.</p>
-                            <p class="bioInfo"><a href="psdewar.me">psdewar.me</a></p>
+                            <p class="bioInfo">University of Florida graduate. Software and mobile app developer. Digital Worlds Institute intern. Basketball lover and music enthusiast.</p>
                         </div>
                         <div class="col-lg-4 col-sm-4">
                             <p class="bioName wow fadeInUp">Hugh A. Miles II
                             <h3><em>Chief Technology Officer</em></h3>
                             </p>
-                            <p class="bioInfo">Currently undergraduate at the University of Florida. Mobile AppDeveloper in iOS/Android. Interning at DoubleDutch for the summer.</p>
-                            <p class="bioInfo"><a href="hamtec.me">hamtec.me</a></p>
+                                <p class="bioInfo">
+                                    University of Florida 5th-year senior. iOS and Android developer. DoubleDutch intern. Grabs life by the horns and thus will make a global impact.
+                                </p>
+
+                            <p class="bioInfo"></p>
                         </div>
                         <div class="col-lg-2 col-sm-2">
-                            <img src="assets/squad/PSD_CEO.png" alt="">
+                            <a href="http://hamtec.me" target="_blank"><img src="assets/squad/HAM_CTO.png" alt=""></a>
+                            <p class="view_site">View Website</p>
                         </div>
                         <!--<div class="header-deveider"></div>
                         <div class="col-lg-3 col-sm-3">
@@ -207,45 +211,36 @@
                         </div>
                     </div>
                     -->
-
+                    </div>
 				</div>
 
 			</div>
 
 		</div>
 
-	</section>
+	</footer>
 
 	<!-- About section end -->
 
 	<!-- Footer start -->
 
 	<footer class="footer wow">
-        <h5 class="special"><em>Special thanks to Finny Jacob, Clay Hausen, Regynald Augustin, and Michael Dennis</em></h5>
-        <ul class="socials-links">
-            <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
-            <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
-            <li><a href=""><i class="fa fa-github-square"></i></a></li>
-            <li><a href=""><i class="fa fa-tumblr-square"></i></a></li>
-        </ul>
-        <p class="copyright">
-            © 2015 pH7, All Rights Reserved
-        </p>
-        <!--
-		<div class="container">
-			<div class="row">
 
-				<div id="subscribe" class="col-md-12 subtitle">
-					<h2>Join the Pryde</h2>
-					<div class="header-deveider"></div>
-					<p class="wow fadeInUp">I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence.</p>
-				</div>
+        <div class="container">
+            <div class="row">
+                <h5 class="special"><em>Special thanks to Finny Jacob, Clay Hausen, Regynald Augustin, and Michael Dennis</em></h5>
+                <!--
+                <ul class="socials-links">
 
-                <div id="share" class="col-md-12 wow fadeInUp"></div>
-
-			</div>
-		</div>
-            -->
+                    <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+                </ul>
+                -->
+                <p class="copyright">
+                    © 2015 pH7, All Rights Reserved
+                </p>
+            </div>
+        </div>
 	</footer>
 
 	<!-- Footer end -->

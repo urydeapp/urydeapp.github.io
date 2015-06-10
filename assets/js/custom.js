@@ -16,7 +16,12 @@
 		 * Background image
 		/* ---------------------------------------------- */
 
-		$.backstretch(['assets/images/bg5.jpg']);
+		$.backstretch([
+			'assets/images/banner1.jpg',
+            'assets/images/banner3.jpg',
+			'assets/images/banner2.png',
+            'assets/images/banner4.jpg'
+		], {duration: 4000, fade: 750});
 
 		/* ---------------------------------------------- /*
 		 * Animation scroll
@@ -82,6 +87,7 @@
 
 
 		/* config dom id (optional) + config particles params */
+		/*
 particlesJS('particles-js', {
   particles: {
     color: '#fff',
@@ -125,9 +131,9 @@ particlesJS('particles-js', {
       }
     }
   },
-  /* Retina Display Support */
+  // Retina Display Support
   retina_detect: true
-});
+});*/
 
 		/* ---------------------------------------------- /*
 		 * Subscribe form ajax
