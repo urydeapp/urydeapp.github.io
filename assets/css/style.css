@@ -95,6 +95,8 @@ ul {
 }
 
 .notification-item{
+	padding-top: 5px;
+	padding-left: 8px;
 	margin-right: 10px;
 	margin-bottom: 5px;
 }
