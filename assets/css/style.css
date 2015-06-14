@@ -95,6 +95,13 @@ ul {
     background: #F5F5F5;
 }
 
+.notification-item{
+	padding-top: 5px;
+	padding-left: 8px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
 
 
 /* Transition elements
