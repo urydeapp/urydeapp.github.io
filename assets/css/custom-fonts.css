@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Harabara';
+    src: url('../fonts/Harabara-Mais.otf'), url('../fonts/Harabara-Mais-BdIt.otf'), url('../fonts/Harabara-Mais-Black.otf'), url('../fonts/Harabara-Mais-Black-Italic.otf'), url('../fonts/Harabara-Mais-Bold.otf'), url('../fonts/Harabara-Mais-Italic.otf'), url('../fonts/Harabara-Mais-Light.otf'), url('../fonts/Harabara-Mais-LtIt.otf');
+    font-weight: normal;
+    font-style: normal;
+}

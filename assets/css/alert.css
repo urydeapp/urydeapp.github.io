@@ -15,5 +15,14 @@
     z-index: 10;
 }
 #dialogbox > div{ background:#FFF; margin:8px; }
-#dialogbox > div > #dialogboxbody{ background:#000; padding:20px; color:#FFF; }
-#dialogbox > div > #dialogboxfoot{ background: #007FFF; }
+#dialogbox > div > #dialogboxbody {
+    background: #000;
+    padding:20px;
+    color:#FFF;
+}
+#dialogbox > div > #dialogboxfoot{
+    background: #000;
+    text-align: center;
+    padding: 15px;
+    color: #FFF;
+}
