@@ -20,7 +20,9 @@
 			'assets/images/banner1.jpg',
             'assets/images/banner3.jpg',
 			'assets/images/banner2.png',
-            'assets/images/banner4.jpg'
+			'assets/images/banner6.jpg',
+            'assets/images/banner4.jpg',
+			'assets/images/banner5.png'
 		], {duration: 4000, fade: 750});
 
 		/* ---------------------------------------------- /*

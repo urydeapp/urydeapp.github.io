@@ -1,6 +1,39 @@
 @font-face {
     font-family: 'Harabara';
-    src: url('../fonts/Harabara-Mais.otf'), url('../fonts/Harabara-Mais-BdIt.otf'), url('../fonts/Harabara-Mais-Black.otf'), url('../fonts/Harabara-Mais-Black-Italic.otf'), url('../fonts/Harabara-Mais-Bold.otf'), url('../fonts/Harabara-Mais-Italic.otf'), url('../fonts/Harabara-Mais-Light.otf'), url('../fonts/Harabara-Mais-LtIt.otf');
-    font-weight: normal;
-    font-style: normal;
+    src: url('../fonts/Harabara-Mais.otf');
+}
+
+@font-face {
+    font-family: 'Harabara-Mais-BdIt';
+    src: url('../fonts/Harabara-Mais-BdIt.otf');
+}
+
+@font-face {
+    font-family: 'Harabara-Mais-Black';
+    src: url('../fonts/Harabara-Mais-Black.otf');
+}
+
+@font-face {
+    font-family: 'Harabara-Mais-Black-Italic';
+    src: url('../fonts/Harabara-Mais-Black-Italic.otf');
+}
+
+@font-face {
+    font-family: 'Harabara-Mais-Bold';
+    src: url('../fonts/Harabara-Mais-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Harabara-Mais-Italic';
+    src: url('../fonts/Harabara-Mais-Italic.otf');
+}
+
+@font-face {
+    font-family: 'Harabara-Mais-Light';
+    src: url('../fonts/Harabara-Mais-Light.otf');
+}
+
+@font-face {
+    font-family: 'Harabara-Mais-LtIt';
+    src: url('../fonts/Harabara-Mais-LtIt.otf');;
 }
