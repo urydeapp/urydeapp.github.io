@@ -56,7 +56,7 @@ function alertUser() {
         document.getElementById('dialogboxfoot').innerHTML = '<button class="btn-lg btn-theme" onclick="Alert.ok()">OK</button>';
     }
     this.ok = function () {
-        if (document.getElementById('dialogboxbody').innerHTML == firstName.value + ", thank you for joining uRyde!") {
+        if (document.getElementById('dialogboxbody').innerHTML == firstName.value + ", thank you for joining uRyde! Please check your email to verify your account.") {
             $('#myModal').modal('hide'); //hides modal - not necessary if refreshing correctly
             window.location.reload(); //refreshes page
         }
@@ -107,7 +107,7 @@ function setUser() {
 	user.signUp(null, {
 		success: function(user) {
 	    	// Hooray! Let them use the app now.
-			Alert.render(firstName.value + ", thank you for joining uRyde!");
+			Alert.render(firstName.value + ", thank you for joining uRyde! Please check your email to verify your account.");
             /*
             signupButton.value = "Welcome!";
             signupButton.style.color = "#FFD700";
