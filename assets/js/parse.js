@@ -3,7 +3,10 @@ Parse.initialize("XtZNXXbzP5R99gWlwRM6ZiRjXxrRoKRd8UEy5QoU", "u2GXAp1rs6x7MYKUtL
 //parse.js
 
 //extend any object that's not user this way
-//var User = Parse.Object.extend("User");
+var Registration = Parse.Object.extend("Registration");
+var regTester = new Registration();
+var regEmail = document.getElementById('sub-email');
+
 
 //otherwise
 var user = new Parse.User();
@@ -13,8 +16,6 @@ var username = document.getElementById('username');
 var password = document.getElementById('password');
 var confPass = document.getElementById('confirmPassword');
 var email = document.getElementById('userEmail');
-var school = document.getElementById('school');
-var phoneNum = document.getElementById('phoneNum');
 
 function checkUserInfo() {
     if (firstName.value.length > 1) {
@@ -32,12 +33,6 @@ function checkUserInfo() {
     }
     if (isCorrect(email.value)) {
         email.style.borderColor = "#00FF00";
-    }
-    if (school.value.length !== 0) {
-        school.style.borderColor = "#00FF00";
-    }
-    if (phoneNum.value.length == 10 || phoneNum.value.length == 11) {
-        phoneNum.style.borderColor = "#00FF00";
     }
 
 }
@@ -66,6 +61,27 @@ function alertUser() {
     }
 }
 var Alert = new alertUser();
+
+function register() {
+    if (isCorrect(regEmail.value)) {
+        regTester.set("schoolEmail", regEmail.value);
+        regTester.save(null, {
+            success: function(regTester) {
+            // Execute any logic that should take place after the object is saved.
+                alert('New object created with objectId: ' + regTester.id);
+                Alert.render("Thank you for registering!");
+                window.location.reload(); //refreshes page
+            },
+            error: function(regTester, error) {
+            // Execute any logic that should take place if the save fails.
+            // error is a Parse.Error with an error code and message.
+            }
+        });
+        
+    } else {
+         Alert.render("Please enter a valid .edu email.");
+    }
+}
 
 function setUser() {
     //QA stuff

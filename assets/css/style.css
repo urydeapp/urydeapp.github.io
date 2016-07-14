@@ -7,15 +7,14 @@
  *
 /* ---------------------------------------------- /*
  * General styles
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
-@import url(http://fonts.googleapis.com/css?family=Lato:300,300italic);
 /* ---------------------------------------------- */
 
-
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,300italic);
 
 body {
 	background: #FFF;
-	font: 300 16px/1.8 'Harabara', sans-serif;
+	font: 300 16px/1.8 'Raleway', sans-serif;
     color: #F5F5F5;
 	text-align: center;
 }
@@ -99,11 +98,11 @@ ul {
 	width: 60%;
 	margin: 0 auto;
 }
-
+/*
 p {
-	font-family: Harabara-Mais-Light;
+	font-family: Raleway;
 }
-
+*/
 big {
 	font-size: 60px;
 }
@@ -198,9 +197,9 @@ h1, h2, h3, h4, h5 {
 
 h1 { font-size: 60px; margin: 25px 25px; }
 
-h2 { font-family: Harabara-Mais-Bold; font-size: 42px; color: #000; }
+h2 { font-size: 42px; color: #000; }
 
-h3 { font-family: Harabara-Mais-Bold; font-size: 20px; color: #000; }
+h3 { font-size: 20px; color: #000; }
 
 h4 { font-size: 18px; }
 
@@ -208,7 +207,7 @@ h5 { font-size: 16px;}
 
 .btn,
 .form-control {
-	font-family: 'Harabara', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	font-size: 15px;
 }
@@ -251,17 +250,16 @@ h5 { font-size: 16px;}
 .intro, .footer {
 	background-color: rgba(0, 0, 0, .7) !important;
 	background-image: url("../images/bg.png") !important;
-	padding: 50px 0;
+	padding: 200px 0;
 	z-index: auto !important;
 	color: #F5F5F5;
 	position: relative;
 }
-/*
+
 .footer {
-	background-color: #007FFF;
-	padding: 25px 0 25px 0;
+	padding: 50px 0;
 }
-*/
+
 
 .intro > .container {
 	position: relative;
@@ -444,4 +442,13 @@ h5 { font-size: 16px;}
 		margin-bottom: 10px;
 	}
 
+}
+
+/* ---------------------------------------------- /*
+ * Privacy Policy
+/* ---------------------------------------------- */
+
+.policyInfo {
+	font-size: 16px;
+	text-align: left;
 }

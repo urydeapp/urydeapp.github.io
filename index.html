@@ -28,6 +28,9 @@
 	<!-- Signup Dialog -->
 	<link href="assets/css/alert.css" rel="stylesheet">
 
+	<!-- uRyde 1.0 -->
+	<link href="assets/css/version-1.css" rel="stylesheet">
+
 	<!-- Parse -->
 	<script src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
 
@@ -50,29 +53,40 @@
 	<section class="intro">
 		<div class="container">
 			<div class="row">
-				</d class="col-md-12">
+				
+				<div class="col-md-12">
 
 					<div class="i_header">
 						<div class="logo">
 							<img src="assets/images/logo_blue.png" height=80 width=80 alt="">
 							<h1 class="ryde">uRyde</h1>
 						</div>
-						<h2 class="launch">Launch date: August 24th, 2015</h2>
-                        <a id="featLink" href="#features" class="btn btn-default btn-lg"><em>Check out the features!</em></a>
+						<!--<h2 class="launch">Launch date: August 24th, 2015</h2>
+                        <a id="featLink" href="#features" class="btn btn-default btn-lg"><em>Check out the features!</em></a>-->
 
 					</div>
 
+<!-- 
 					<div class="i_cicle">
-						<!-- Timer: Your date here -->
+						Timer: Your date here
 						<div class="countdown-time animated bounceIn" data-date="2015-08-24 00:00:00" data-timer="100"></div>
 					</div>
+
 
 					<div class="i_footer">
 						<button class="btn btn-default btn-lg btn-theme" data-toggle="modal" data-target="#myModal">Sign Up</button>
 
 					</div>
+					<div class="i_footer subscription-form form-inline wow fadeInUp" role="form">
+						<div class="form-group">
+							<label class="sr-only" for="sub-email"></label>
+							<input type="email" id="sub-email" name="sub-email" class="form-control input-box" placeholder="Email (must be .edu)" >
+						</div>
+						<button id="register" type="submit" class="btn btn-default btn-theme" onclick=register()>Become a beta tester!</button>
+					</div>
+-->
+<!-- Modal -->
 
-					<!-- Modal -->
 					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 						<div class="modal-dialog">
 							<div class="modal-content">
@@ -84,7 +98,7 @@
 
                                     <form class="subscription-form wow fadeInUp" onchange="return checkUserInfo();" role="form">
                                         <div class="form-group">
-                                            <!-- <label class="sr-only" for=" ">Your Email</label> -->
+                                            <label class="sr-only" for=" ">Your Email</label>
                                             <input type="text" required id="firstName" class="input-box" maxlength=50 placeholder="First Name" >
                                             <input type="text" required id="lastName" class="input-box" maxlength=50 placeholder="Last Name" >
                                             <div id="dialogoverlay"></div>
@@ -98,11 +112,9 @@
                                             <input type="password" required id="password" class="input-box" minlength=6 maxlength=20 placeholder="Password (6-20 characters)" >
                                             <input type="password" required id="confirmPassword" class="input-box" minlength=6 maxlength=20 placeholder="Confirm Password" >
                                             <input type="email" required id="userEmail" class="input-box" placeholder="Email (must be .edu)" >
-                                            <input type="text" required id="school" class="input-box" placeholder="School" >
-                                            <input type="number" required id="phoneNum" class="input-box" minlength=10 maxlength=11 placeholder="Phone Number" >
                                             
                                         </div>
-                                        <!--<i class="fa fa-rss"></i>-->
+                                        <!-- <i class="fa fa-rss"></i> -->
                                     </form>
 
 								</div>
@@ -112,6 +124,7 @@
 							</div>
 						</div>
 					</div>
+				
 
 				</div>
 			</div>
@@ -172,13 +185,42 @@
 			</div>
 
 		</div>
-        <a id="squadButton" href="#about" class="btn btn-default btn-lg">Meet the Squad</a>
 	</section>
 
 	<!-- Features section end -->
 
-	<!-- About section start -->
+	<!-- Privacy policy -->
+	<footer id="privacy" class="about">
+		<div class="container">
+			<div class="row">
+				<h2><strong>Terms of Use</strong></h2>
+				<p class="policyInfo">Last Updated: July 14, 2016</p>
+				<p class="policyInfo"><strong>Basic Terms</strong></p>
+				<ol class="policyInfo">
+					<li>You must be a student with a valid .edu email to use the services from this app.</li>
+					<li>You are responsible for any activity that occurs under your name.</li>
+					<li>You are responsible for keeping your password secure.</li>
+					<li>You must not abuse, harass, threaten, impersonate or intimidate other uRyde users.</li>
+					<li>You may not use uRyde for any illegal or unauthorized purpose.</li>
+					<li>You must not, in the use of uRyde, violate any laws in your jurisdiction (including but not limited to copyright laws).</li>
+					<li>Violation of any of these agreements will result in the termination of your uRyde account. While uRyde prohibits such conduct and content, you understand and agree that uRyde cannot be responsible for the content posted and you nonetheless may be exposed to such materials and that you use the uRyde at your own risk.</li>
+				</ol>
+				<br>
+                <h2><strong>Privacy Policy</strong></h2>
+                <p class="policyInfo">Effective Date: July 15, 2016</p>
+                <p class="policyInfo"><strong>Information Collected</strong></p>
+                <p class="policyInfo">You directly provide your first and last name, email, location, and password as well as offers and requests including the destination and departure date. These pieces of information help us efficiently operate the uRyde platform.</p>
+                <p class="policyInfo"><strong>Changes to Privacy Policy</strong></p>
+                <p class="policyInfo">uRyde may modify or update this Privacy Policy from time to time, so please review it periodically. We may provide you additional forms of notice of modifications or updates as appropriate under the circumstances. Your continued use of uRyde after any modification to this Privacy Policy will constitute your acceptance of such modification.</p>
+                <p class="policyInfo"><strong>Contact Us</strong></p>
+                <p class="policyInfo">If you have any questions about this Privacy Statement, please contact us at uryde.team@gmail.com</p>
+            </div>
+        </div>
+    </footer>
 
+
+	<!-- About section start -->
+<!--
 	<footer id="about" class="about">
 		<div class="container">
 			<div class="row">
@@ -209,7 +251,7 @@
                             <a href="http://hamtec.me" target="_blank"><img src="assets/squad/HAM_CTO.png" alt=""></a>
                             <p class="view_site">View Website</p>
                         </div>
-                        <!--<div class="header-deveider"></div>
+                        <div class="header-deveider"></div>
                         <div class="col-lg-3 col-sm-3">
                             <img src="assets/squad/PSD_CEO.png" alt="">
                         </div>
@@ -232,7 +274,7 @@
                             <img src="assets/squad/PSD_CEO.png" alt="">
                         </div>
                     </div>
-                    -->
+                   
                     </div>
 				</div>
 
@@ -241,6 +283,7 @@
 		</div>
 
 	</footer>
+-->
 
 	<!-- About section end -->
 
@@ -250,7 +293,7 @@
 
         <div class="container">
             <div class="row">
-                <h5 class="special"><em>Special thanks to Finny Jacob, Clay Hausen, Regynald Augustin, and Michael Dennis</em></h5>
+                <h5 class="special"><em>Special thanks to Hugh Miles, Finny Jacob, Clay Hausen, Regynald Augustin, and Michael Dennis</em></h5>
                 <!--
                 <ul class="socials-links">
 
@@ -259,7 +302,7 @@
                 </ul>
                 -->
                 <p class="copyright">
-                    © 2015 pH7, All Rights Reserved
+                    © 2016 Peyt Spencer Dewar, All Rights Reserved
                 </p>
             </div>
         </div>
